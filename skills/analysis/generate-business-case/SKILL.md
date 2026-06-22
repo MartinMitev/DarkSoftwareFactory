@@ -1,4 +1,9 @@
-# Skill: Generate Business Case
+---
+name: generate-business-case
+description: Generates a Business Case for a software project. The skill conducts financial and strategic analysis, evaluates multiple options against measurable criteria, and presents a defensible investment recommendation. The business case  builds on the viability study (if one exists) to answer *"Should we invest, how much, and in which option?"*
+---
+
+# Generate Business Case
 
 ## Description
 

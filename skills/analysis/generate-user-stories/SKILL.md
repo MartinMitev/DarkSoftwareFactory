@@ -1,3 +1,8 @@
+---
+name: generate-user-stories
+description: Generates a User Stories document (central overview) and individual user story documents (one per story). The skill deeply analyzes all available project information — existing documentation, codebase, stakeholder inputs, and any informal requirements artifacts — to decompose requirements into well-structured, estimable, and deliverable user stories organized by epics. User stories translate the SRS's "what the system must do" into the delivery team's "what do users need, in what order, and how do we deliver it incrementally?"
+---
+
 # Skill: Generate User Stories
 
 ## Description

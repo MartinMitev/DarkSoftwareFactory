@@ -1,3 +1,8 @@
+---
+name: generate-software-requirements-specification
+description: Generates a Software Requirements Specification (SRS) document. The skill analyzes all available project information to populate every applicable section of the given template. 
+---
+
 # Skill: Generate Software Requirements Specification
 
 ## Description

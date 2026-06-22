@@ -1,3 +1,8 @@
+---
+name: generate-project-scope
+description: Generates a Software Project Scope document. The skill analyzes all available project information  to populate every applicable section of the given template. 
+---
+
 # Skill: Generate Project Scope Document
 
 ## Description

@@ -1,3 +1,8 @@
+---
+name: generate-viability-study
+description: Generates a Software Project Viability Study. The skill conducts deep investigative analysis of all available project information, stakeholder inputs, market evidence, and technical landscape to populate every applicable section. The viability study is the **first formal analysis document** in the project lifecycle — its purpose is to determine whether a project *should* proceed, not just *how*.
+---
+
 # Skill: Generate Viability Study
 
 ## Description

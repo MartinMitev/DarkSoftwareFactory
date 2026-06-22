@@ -1,3 +1,8 @@
+---
+name: generate-software-architecture
+description: Generates a Software Architecture document. The skill deeply analyzes all available project information — user stories, existing documentation, codebase, stakeholder inputs, and any informal requirements artifacts — to populate every applicable section with detailed, justified architectural decisions. The skill **proposes a software stack** and aligns it with the user before finalizing. The architecture document specifies HOW the system will be built — it translates the SRS's "what the system must do" into concrete technology choices, decomposition strategies, runtime behaviors, deployment models, and cross-cutting concepts.
+---
+
 # Skill: Generate Software Architecture
 
 ## Description

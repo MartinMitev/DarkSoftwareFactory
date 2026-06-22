@@ -1,3 +1,7 @@
+---
+name: generate-project-plan
+description: Generates a Software Project Plan. The skill deeply analyzes all available project information — existing documentation, codebase, stakeholder inputs, and any organizational standards — to populate a detailed, executable project framework. The project plan is the **authoritative execution document** — it defines HOW the project will be executed, monitored, and controlled, translating the "what and why" from preceding documents into "how, when, by whom, with what resources, under what governance."
+---
 # Skill: Generate Project Plan
 
 ## Description
