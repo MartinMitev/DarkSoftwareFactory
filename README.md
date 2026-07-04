@@ -181,5 +181,4 @@ Most skills recommend saving generated artifacts under `documentation/` (or `doc
 
 ## Notes
 
-- The `.kilo/` folder (if present in a consumer repo) is typically configuration for Kilo commands/agents/skills. In this repository it is ignored by default (see `.gitignore`).
 - `external_sources/` contains imported upstream materials; treat these as references rather than core project content.
