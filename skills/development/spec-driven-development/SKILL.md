@@ -67,7 +67,7 @@ Don't silently fill in ambiguous requirements. The spec's entire purpose is to s
    src/lib        → Shared utilities
    tests/         → Unit and integration tests
    e2e/           → End-to-end tests
-   docs/          → Documentation
+   documentation/ → Documentation
    ```
 
 4. **Code Style** — One real code snippet showing your style beats three paragraphs describing it. Include naming conventions, formatting rules, and examples of good output.

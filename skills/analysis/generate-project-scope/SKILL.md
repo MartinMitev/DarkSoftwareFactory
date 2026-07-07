@@ -123,7 +123,7 @@ Once all critical and important questions are resolved, generate the project sco
 9. **Include measurable acceptance criteria** wherever possible — use numbers, percentages, and thresholds.
 10. **Cross-reference preceding documents** — when content derives from the viability study or business case, reference them (e.g., "As identified in the Business Case Section 7.1, the primary tangible benefit is...").
 11. **Do not repeat analysis from preceding documents** — reference and summarize rather than duplicating. The scope document translates recommendations into delivery boundaries.
-12. **Save the generated document** to an appropriate location, suggested: `docs/project-scope.md` or alongside the business case.
+12. **Save the generated document** to the following location: `documentation/project-scope.md`.
 
 #### Quality Checks Before Delivery
 
