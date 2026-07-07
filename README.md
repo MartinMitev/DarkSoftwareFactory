@@ -166,7 +166,7 @@ Keep the skill logic stable; evolve templates to match the customer/project.
 
 ### 3. Store Outputs in `documentation/`
 
-Most skills recommend saving generated artifacts under `documentation/` (or `docs/` if your repository standard is different). This repo contains `documentation/` as the default place for project outputs.
+All skills save generated artifacts under `documentation/`. You will need to customize the skills of your repository standard is different.
 
 ---
 

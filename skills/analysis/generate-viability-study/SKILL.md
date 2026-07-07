@@ -165,7 +165,7 @@ Once all critical and important questions are resolved, generate the viability s
 13. **Ensure the SWOT analysis (Section 12) and risk register (Section 11) are aligned** — strengths should mitigate risks; weaknesses should amplify threats; opportunities may counterbalance threats.
 14. **Ensure the alternatives analysis (Section 13) includes the "do nothing" baseline** with its own cost trajectory and risk profile.
 15. **Make the go/no-go criteria (Section 14.3) measurable** — each criterion must have a threshold, a current value (or "unknown"), and a yes/no assessment.
-16. **Save the generated document** to an appropriate location, suggested: `docs/viability-study.md` or `documentation/viability-study.md`.
+16. **Save the generated document** to the following location: `documentation/viability-study.md`.
 
 #### Quality Checks Before Delivery
 

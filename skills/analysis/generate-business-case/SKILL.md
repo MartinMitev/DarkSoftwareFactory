@@ -180,7 +180,7 @@ Once all critical and important questions are resolved, generate the business ca
 16. **Define measurable go/no-go criteria** at each stage gate (Section 15.2) — each gate must have specific, measurable pass/fail criteria.
 17. **Include a post-implementation review plan** (Section 16) — this holds the project accountable for delivering promised benefits and is essential for investment credibility.
 18. **Cross-reference between sections** — benefits in Section 7 must align with cash flows in Section 9.1, options in Section 5 must match the financial comparison in Section 5.3, and risks in Section 10 must be reflected in sensitivity scenarios in Section 9.6.
-19. **Save the generated document** to an appropriate location, suggested: `docs/business-case.md` or `documentation/business-case.md`.
+19. **Save the generated document** to the following location: `documentation/business-case.md`.
 
 #### Quality Checks Before Delivery
 

@@ -194,7 +194,7 @@ Once all critical and important questions are resolved, generate the Software Re
 18. **Ensure interface requirements (Section 8) cover all external system interactions** — if a use case or FR involves an external system, an interface requirement must exist.
 19. **Ensure the verification & validation section (Section 14) specifies how each requirement category is verified** — every requirement must have a verification method.
 20. **Ensure the change control process (Section 15) is realistic and actionable** — it must define who approves what at which impact level.
-21. **Save the generated document** to an appropriate location, suggested: `documentation/software-requirements-specification.md` or `docs/srs.md`.
+21. **Save the generated document** to the following location: `documentation/software-requirements-specification.md`.
 
 #### Requirement Writing Guidelines
 

@@ -196,7 +196,7 @@ Once all critical and important questions are resolved, generate the project pla
 14. **For 🟤🔵**: Populate the transition plan (Section 17) with specific cutover steps, rollback triggers, and decision authorities. The cutover runbook (Section 17.5) must be detailed enough to execute under pressure.
 15. **For 🟤🔵**: Ensure the dual-running cost (Section 17.3) is reflected in the budget (Section 8.2) and the schedule (Section 7.1).
 16. **For 🟢**: Ensure Sprint 0 / Inception is adequately detailed — team onboarding, tooling setup, environment provisioning, and architecture baseline must be planned before feature delivery can begin.
-17. **Save the generated document** to an appropriate location, suggested: `documentation/project-plan.md` or `docs/project-plan.md`.
+17. **Save the generated document** to the following location: `documentation/project-plan.md`.
 
 #### Quality Checks Before Delivery
 
