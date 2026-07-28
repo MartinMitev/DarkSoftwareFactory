@@ -182,3 +182,22 @@ Most skills recommend saving generated artifacts under `documentation/` (or `doc
 ## Notes
 
 - `external_sources/` contains imported upstream materials; treat these as references rather than core project content.
+
+---
+
+## Skill & Template Guide
+
+Comprehensive documentation for every skill and template in the factory, organized by SDLC phase, with complete workflow explanations and flow diagrams (rendered natively on GitHub):
+
+→ **[Skill & Template Guide](guides/README.md)**
+
+### Quick Links
+
+| Phase | Guide |
+|-------|-------|
+| Analysis | [Analysis Guide](guides/analysis.md) |
+| Design | [Design Guide](guides/design.md) |
+| Development | [Development Guide](guides/development.md) |
+| Testing | [Testing Guide](guides/testing.md) |
+| Deployment | [Deployment Guide](guides/deployment.md) |
+| Meta (cross-cutting) | [Meta Guide](guides/meta.md) |
