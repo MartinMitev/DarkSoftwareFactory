@@ -53,11 +53,11 @@ The user's nine proposed core artefacts are present with their stated semantics 
 
 The design phase has a single template, `templates/design/software-architecture.md`. Every numbered section maps to at least one artefact (or to a documented convention — metadata, glossary, ToC, document history, approval, diagram index — which is not ontology semantics). Detailed per-section matrices live inside each artefact's "Template coverage" section; a condensed view:
 
-- **§1 Executive Summary** → convention (summary table) + [Component](component.md) (decomposition), [Decision](../analysis/decision.md) (key decisions), [Requirement](../analysis/requirement.md) (top quality goals), [Risk](../analysis/risk.md) / [Technical Debt Item](../analysis/technical-debt-item.md) (top risks/debts), [Constraint](../analysis/constraint.md) (key constraints).
-- **§2 Introduction & Goals** → [Project](../analysis/project.md) (purpose/metadata), project-type convention, [Requirement](../analysis/requirement.md) (§2.3 requirements overview; §2.4 quality goals = top NFRs), [Quality Scenario](quality-scenario.md) (§2.4 concrete scenarios), [Stakeholder](../analysis/stakeholder.md) (§2.5), glossary convention, [Documentation Inventory](../analysis/documentation-inventory.md) (§2.7 references).
+- **§1 Executive Summary** → convention (summary table) + [Component](component.md) (decomposition) + [Design Pattern](design-pattern.md) (architectural approach / top-level pattern), [Decision](../analysis/decision.md) (key decisions), [Requirement](../analysis/requirement.md) (top quality goals), [Risk](../analysis/risk.md) / [Technical Debt Item](../analysis/technical-debt-item.md) (top risks/debts), [Constraint](../analysis/constraint.md) (key constraints).
+- **§2 Introduction & Goals** → [Project](../analysis/project.md) (purpose/metadata, incl. architectureOwner & precedingDocuments), project-type convention, [Requirement](../analysis/requirement.md) (§2.3 requirements overview; §2.4 quality goals = top NFRs), [Quality Scenario](quality-scenario.md) (§2.4 concrete scenarios), [Stakeholder](../analysis/stakeholder.md) (§2.5 — Role/Name, Contact, Expectations, Influence, Attitude), glossary convention, [Documentation Inventory](../analysis/documentation-inventory.md) (§2.7 references).
 - **§3 Architecture Constraints** → [Constraint](../analysis/constraint.md) (§3.1 technical, §3.2 organizational, §3.3 conventions, §3.4 legacy), [Compliance Requirement](../analysis/compliance-requirement.md).
 - **§4 Context & Scope** → [Application](../analysis/application.md) + [Stakeholder](../analysis/stakeholder.md) / [Persona](../analysis/persona.md) (§4.1 communication partners), [Interface](../analysis/interface.md) (§4.1 domain I/O, §4.2 technical context channels/security, §4.3 external interface specs), [Technology](../analysis/technology.md) (§4.2 protocols).
-- **§5 Solution Strategy** → [Decision](../analysis/decision.md) ADRs (§5.1 technology, §5.2 top-level decomposition, §5.4 migration, §5.5 organizational), [Technology](../analysis/technology.md) (§5.1), [Component](component.md) (§5.2), [Requirement](../analysis/requirement.md) + [Component](component.md)/[Crosscutting Concern](crosscutting-concern.md)/[Design Pattern](design-pattern.md) (§5.3 quality-goal achievement), [Transition Strategy](../analysis/transition-strategy.md) (§5.4), [Role](../analysis/role.md)/[RACI Assignment](../analysis/raci-assignment.md) (§5.5 team topology).
+- **§5 Solution Strategy** → [Decision](../analysis/decision.md) ADRs (§5.1 technology, §5.2 top-level decomposition, §5.4 migration, §5.5 organizational), [Technology](../analysis/technology.md) (§5.1), [Component](component.md) (§5.2) + [Design Pattern](design-pattern.md) (§5.2 architectural style), [Requirement](../analysis/requirement.md) + [Quality Scenario](quality-scenario.md) (§5.3 qualityStrategy/artifact/tradeOffs) + [Component](component.md)/[Crosscutting Concern](crosscutting-concern.md)/[Design Pattern](design-pattern.md) (§5.3 mechanism), [Transition Strategy](../analysis/transition-strategy.md) (§5.4), [Role](../analysis/role.md)/[RACI Assignment](../analysis/raci-assignment.md) (§5.5 team topology).
 - **§6 Building Block View** → [Component](component.md) (§6.1 level 1, §6.2 level 2, §6.3 level 3, §6.4 existing structure 🟤🔵, §6.5 transition building blocks 🔵), [Interface](../analysis/interface.md) (important interfaces).
 - **§7 Runtime View** → [Execution Flow](execution-flow.md) (§7.1/7.2 scenarios, §7.3 migration runtime 🔵🟤, §7.4 error/exception).
 - **§8 Deployment View** → [Infrastructure Resource](infrastructure-resource.md) (§8.1 level 1, §8.2 level 2, §8.4 legacy 🔵🟤), [Deployment Node](deployment-node.md) (§8.1 mapping, §8.4), [Environment](environment.md) (§8.3, §8.4 migration environments).
@@ -66,7 +66,7 @@ The design phase has a single template, `templates/design/software-architecture.
 - **§11 Quality Requirements** → [Requirement](../analysis/requirement.md) NFR (§11.1 overview), [Quality Scenario](quality-scenario.md) (§11.2 quality scenarios, §11.3 migration quality scenarios 🔵🟤).
 - **§12 Risks & Technical Debts** → [Risk](../analysis/risk.md) (§12.1 technical, §12.3 legacy 🟤🔵, §12.4 migration 🔵🟤), [Technical Debt Item](../analysis/technical-debt-item.md) (§12.2, §12.3 legacy 🟤🔵).
 - **§13 Glossary** → convention.
-- **§14 Appendices** → [Project](../analysis/project.md) (document history/approval conventions), convention (diagram index, additional info), [Proof of Concept](../analysis/proof-of-concept.md) (§14.4 PoC links).
+- **§14 Appendices** → [Project](../analysis/project.md) (document history/approval conventions), convention (diagram index), [Governance](../analysis/governance.md) + [Decision](../analysis/decision.md) + [Stakeholder](../analysis/stakeholder.md) (§14.2 Approval/Sign-off — table is a convention; signatories are stakeholders, approval authority is governance, sign-off is a decision), [Proof of Concept](../analysis/proof-of-concept.md) (§14.4 PoC links), [Verification & Validation](../analysis/verification-validation.md) (§14.4 — threat models, security assessments, performance benchmarks/load tests are V&V artefacts).
 
 ## 6. Non-overlap summary (design ↔ analysis)
 
@@ -92,12 +92,31 @@ Within the design ontology, the high-risk overlaps are resolved with hard bounda
 
 ## 7. Expansions made to the analysis ontology
 
-To preserve non-overlap while fully covering the design template, four analysis artefacts were expanded (no new analysis artefacts were added):
+To preserve non-overlap while fully covering the design template, six analysis artefacts were expanded (no new analysis artefacts were added):
 
 - [Decision](../analysis/decision.md) — added the full ADR structure (`adrTitle`, `adrContext`, `adrDecision`, `alternativesConsidered`, `adrConsequences`, `compliance`, `sectionReference`) and type `organizational`; covers design §5.5 and §10.
 - [Constraint](../analysis/constraint.md) — added type `convention`; covers design §3.3 Conventions.
 - [Technical Debt Item](../analysis/technical-debt-item.md) — made stateful; added `origin` (deliberate/inadvertent/legacy), `remediationPlan`, `priority`, `targetDate`; covers design §12.2/§12.3 (debt carried forward or created by the architecture/migration).
 - [Interface](../analysis/interface.md) — extended to internal component-to-component boundaries; added `version`, `securityMechanism`, `specificationLocation`; covers design §4.2, §4.3, §6.1/§6.2 important interfaces.
+- [Project](../analysis/project.md) — added `architectureOwner` (ref → Stakeholder, distinct from `technicalLead`) and `precedingDocuments` (ref[] → Documentation Inventory); carries the design template's Metadata block (Architecture Owner, Preceding Documents).
+- [Stakeholder](../analysis/stakeholder.md) — added `contact` and `expectations`; carries all §2.5 columns (Role/Name, Contact, Expectations, Influence, Attitude).
+
+Two design artefacts received clarifying optional attributes (no semantic shift):
+
+- [Design Pattern](design-pattern.md) — semantics now states that `category=architectural` covers system-level architectural styles (microservices, event-driven, layered, hexagonal, CQRS, Event Sourcing); covers design §1 "Architectural Approach" and §5.2 "Top-Level Decomposition".
+- [Quality Scenario](quality-scenario.md) — added optional `qualityStrategy` and `tradeOffs`; covers design §5.3 "Quality Goal Achievement Strategies" as a one-row join (NFR ← qualityStrategy/artifact/tradeOffs).
+
+## 7.1 Considered and rejected new design artefacts
+
+The following candidate design artefacts were considered during the coverage audit and **rejected** — each would overlap an existing atom. They are documented here to prevent re-litigation.
+
+| Candidate | Would overlap | Reason for rejection |
+|---|---|---|
+| Solution Strategy | [Decision](../analysis/decision.md) (ADRs) + [Component](component.md) + [Design Pattern](design-pattern.md) | §5 is a *view* that assembles ADRs, components, patterns, and the transition strategy — not a distinct atom. |
+| Quality Tactic | [Quality Scenario](quality-scenario.md) `qualityStrategy` + [Design Pattern](design-pattern.md) | A tactic is the `qualityStrategy` field of a scenario referencing a pattern as mechanism; a separate atom would duplicate both. |
+| Communication Partner | [Stakeholder](../analysis/stakeholder.md) + [Application](../analysis/application.md) + [Interface](../analysis/interface.md) | §4.1 partners are stakeholders (with contact/expectations) communicating across interfaces; no separate atom. |
+| Context Diagram | convention (diagram) + [Application](../analysis/application.md) + [Interface](../analysis/interface.md) | A diagram is a *view* of the context, not a semantic atom; governed by the diagram-index convention. |
+| Architecture Decision (design-owned) | [Decision](../analysis/decision.md) ADR variant | ADRs are owned by analysis `decision` to keep analysis self-contained; design artefacts link via `justifiedBy`. |
 
 ## 8. Conventions not modelled as artefacts
 

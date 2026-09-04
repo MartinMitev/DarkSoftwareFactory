@@ -9,7 +9,7 @@
 
 ## 2. Semantics (crisp)
 
-`design-pattern` is a **reusable design solution** applied within one or more [Component](component.md)s: a name, a category (creational / structural / behavioral / architectural), the problem it solves, the solution structure, the consequences (trade-offs), and related patterns. It is a tactical/structural choice at the component level — e.g. Repository, Factory, Adapter, Strategy, CQRS, Event Sourcing, Saga, BFF, Sidecar. It is **not** a system-wide policy (→ [Crosscutting Concern](crosscutting-concern.md) — a concern may *mandate* a pattern, but the pattern is the tactical solution), **not** the component itself (→ [Component](component.md)), **not** an architecture decision (→ [Decision](../analysis/decision.md) — a decision may *select* a pattern), and **not** the technology (→ [Technology](../analysis/technology.md)). Selection of a pattern as architecturally significant is recorded as an ADR (analysis [Decision](../analysis/decision.md), type=architecture).
+`design-pattern` is a **reusable design solution** applied within one or more [Component](component.md)s: a name, a category (creational / structural / behavioral / architectural), the problem it solves, the solution structure, the consequences (trade-offs), and related patterns. The `architectural` category covers **system-level architectural styles** (microservices, event-driven, layered, hexagonal, CQRS, Event Sourcing); a top-level architectural Design Pattern plus the level-1 [Component](component.md) decomposition together form the design template's §1 "Architectural Approach" and §5.2 "Top-Level Decomposition". At the component level it is a tactical/structural choice — e.g. Repository, Factory, Adapter, Strategy, Saga, BFF, Sidecar. It is **not** a system-wide policy (→ [Crosscutting Concern](crosscutting-concern.md) — a concern may *mandate* a pattern, but the pattern is the tactical solution), **not** the component itself (→ [Component](component.md)), **not** an architecture decision (→ [Decision](../analysis/decision.md) — a decision may *select* a pattern), and **not** the technology (→ [Technology](../analysis/technology.md)). Selection of a pattern as architecturally significant is recorded as an ADR (analysis [Decision](../analysis/decision.md), type=architecture).
 
 ## 3. Attributes
 
@@ -41,6 +41,8 @@ N/A — structural choice; status follows hosting document approval.
 
 ## 7. Template coverage
 
+- `templates/design/software-architecture.md` §1 Executive Summary ("Architectural Approach" = top-level architectural pattern + level-1 decomposition)
+- `templates/design/software-architecture.md` §5.2 Top-Level Decomposition (architectural-style pattern)
 - `templates/design/software-architecture.md` §9 Cross-cutting Concepts (patterns applied across building blocks, e.g. data-access patterns, integration patterns, DDD patterns)
 - `templates/design/software-architecture.md` §6 Building Block View (patterns within whitebox descriptions)
 

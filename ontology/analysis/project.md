@@ -20,6 +20,7 @@
 | sponsor | ref → [Stakeholder](stakeholder.md) | yes | sponsoring stakeholder/department |
 | productOwner | ref → [Stakeholder](stakeholder.md) | yes | |
 | technicalLead | ref → [Stakeholder](stakeholder.md) | yes | |
+| architectureOwner | ref → [Stakeholder](stakeholder.md) | no | architect or architecture team lead — distinct from technicalLead |
 | projectManager | ref → [Stakeholder](stakeholder.md) | no | |
 | authors | string[] | no | |
 | reviewers | string[] | no | |
@@ -27,6 +28,7 @@
 | baselineVersion | string | no | set on approval |
 | projectId | string | no | unique identifier |
 | program | string | no | parent program name |
+| precedingDocuments | ref[] → [Documentation Inventory](documentation-inventory.md) | no | prior analysis documents feeding this engagement (e.g. viability study, business case, project scope) |
 
 ## 4. State (as-is / target)
 
@@ -51,6 +53,7 @@ Supplies the **Metadata** block and the **Project Type Classification** (§2.2) 
 - `templates/analysis/software-requirements-specification.md` §0 Metadata, §2.2
 - `templates/analysis/user-stories.md` §0 Metadata, §1.2
 - `templates/analysis/project-plan.md` §0 Metadata, §2.2
+- `templates/design/software-architecture.md` §Metadata (Architecture Owner, Preceding Documents), §2.2 Project Type Classification
 
 ## 8. Non-overlap note
 

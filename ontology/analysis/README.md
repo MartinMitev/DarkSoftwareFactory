@@ -7,7 +7,7 @@ A reusable, non-duplicating ontology of the **analysis phase** of the SDLC. Each
 - **Slug** = kebab-case file name, used as the cross-reference target.
 - **Cross-references** are relative links, e.g. `[Role](role.md)`, so the ontology is navigable.
 - **Each artefact file** follows a fixed scaffold: Identity & definition · Semantics · Attributes · State · Relationships · Lifecycle / status · Template coverage · Non-overlap note.
-- **The metadata block** (project name, sponsor, product owner, technical lead, classification, baseline version) and **the glossary** that recur at the top of every template are not artefacts — they are conventions owned by the root [Project](project.md) artefact and by this README. Each template's metadata is an instance of `project`.
+- **The metadata block** (project name, sponsor, product owner, technical lead, architecture owner, preceding documents, classification, baseline version) and **the glossary** that recur at the top of every template are not artefacts — they are conventions owned by the root [Project](project.md) artefact and by this README. Each template's metadata is an instance of `project`.
 
 ## 2. Project-type legend (defined once — never re-explained per file)
 

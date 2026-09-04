@@ -9,17 +9,19 @@
 
 ## 2. Semantics (crisp)
 
-`stakeholder` is a **person or group with a stake** — internal (executive sponsors, budget holders, development teams, operations, support, end-user departments) or external (customers, partners, regulators, vendors, auditors) — with a role/interest, an influence level (High/Medium/Low), an attitude (champion/neutral/resistant), and an engagement approach. It references (it does not redefine) a [Role](role.md) and/or [Persona](persona.md), and is engaged via a [Communication Plan](communication-plan.md). It is **not** the role definition (→ [Role](role.md)) and **not** the engagement plan (→ [Communication Plan](communication-plan.md)). For Brown Field / Modernization it includes stakeholders affected by the transition (current users, legacy support, vendor contacts).
+`stakeholder` is a **person or group with a stake** — internal (executive sponsors, budget holders, development teams, operations, support, end-user departments) or external (customers, partners, regulators, vendors, auditors) — with a role/interest, contact, expectations (what they expect from the system/documentation), an influence level (High/Medium/Low), an attitude (champion/neutral/resistant), and an engagement approach (the how-to-engage plan, distinct from `expectations`). It references (it does not redefine) a [Role](role.md) and/or [Persona](persona.md), and is engaged via a [Communication Plan](communication-plan.md). It is **not** the role definition (→ [Role](role.md)) and **not** the engagement plan (→ [Communication Plan](communication-plan.md)). For Brown Field / Modernization it includes stakeholders affected by the transition (current users, legacy support, vendor contacts).
 
 ## 3. Attributes
 
 | Attribute | Type | Required | Notes |
 |---|---|---|---|
 | name | string | yes | |
+| contact | string | no | contact information (email / channel) |
 | roleOrInterest | string | yes | |
+| expectations | string | no | what the stakeholder expects from the system/documentation |
 | influence | enum (High / Medium / Low) | yes | |
 | attitude | enum (champion / neutral / resistant) | yes | |
-| engagementApproach | string | yes | |
+| engagementApproach | string | yes | how-to-engage plan (distinct from `expectations`) |
 | internalExternal | enum (internal / external) | yes | |
 
 ## 4. State (as-is / target)
@@ -42,6 +44,7 @@ N/A — identity; attitudes may shift over time.
 - `templates/analysis/project-scope.md` §15.1 Scope Approval (sign-off stakeholders)
 - `templates/analysis/project-plan.md` §16.1 Stakeholder Register
 - `templates/analysis/software-requirements-specification.md` §3.4 Stakeholder Requirements Priorities
+- `templates/design/software-architecture.md` §2.5 Stakeholders (Role/Name, Contact, Expectations, Influence, Attitude)
 
 ## 8. Non-overlap note
 
