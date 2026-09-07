@@ -110,7 +110,7 @@ Repository structure (monorepo vs polyrepo), commit-message format (Conventional
 
 ## 10. Dependency diagram
 
-The diagram below shows the **11 development artefacts** and their **semantic references**, including references into the analysis and design ontologies (upstream atoms shown in grey). Each arrow `A → B` means **"A refers to B"** (A depends on B's semantics; equivalently, A's content links to B). It is the inverse of each file's "Referred by" line. Analysis and design atoms are referenced one-way — upstream phases stay self-contained — preserving the phase separation.
+The diagram below shows the **11 development artefacts** and their **semantic references**, including references into the analysis and design ontologies (upstream atoms shown in grey). Each arrow `A → B` means **"A refers to B"** (A depends on B's semantics; equivalently, A's content links to B). It is the inverse of each file's "Referred by" line. The self-reference `code_unit → code_unit` represents the code-unit dependency graph (`dependsOn` / `dependedBy`); the self-reference `build_artifact → build_artifact` represents artifact-to-artifact dependencies (`dependsOnArtifacts`). Analysis and design atoms are referenced one-way — upstream phases stay self-contained — preserving the phase separation.
 
 ```mermaid
 flowchart TD
@@ -157,6 +157,7 @@ flowchart TD
   code_unit --> technology
   code_unit --> role
   code_unit --> constraint
+  code_unit --> code_unit
   code_commit --> code_unit
   code_commit --> work_package
   code_commit --> user_story
@@ -181,6 +182,7 @@ flowchart TD
   build_configuration --> environment
   build_configuration --> decision
   build_artifact --> build_run
+  build_artifact --> build_artifact
   build_artifact --> code_unit
   build_artifact --> release
   build_artifact --> deployment_node

@@ -18,6 +18,7 @@
 | name | string | yes | |
 | description | string | yes | |
 | level | int | yes | level 1 / 2 in the map |
+| parentCapability | ref → [Capability](capability.md) | no | parent capability (level-1/2 hierarchy) |
 | owner | ref → [Stakeholder](stakeholder.md) | yes | accountable for the capability |
 | outcomes | string | yes | what it produces |
 | hotspots | string | no | known weaknesses / gaps |
@@ -28,8 +29,8 @@ Stateful. As-is capability (current ability, gaps) vs target capability (require
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Capability Map](capability-map.md), [Business Process](business-process.md), [Application](application.md), [Requirement](requirement.md).
-- **Referred by:** [Application](application.md), [Business Process](business-process.md), [Capability Map](capability-map.md), [Epic](epic.md), [Requirement](requirement.md), [Roadmap](roadmap.md), [Value Stream](value-stream.md).
+- **Refers to:** [Capability Map](capability-map.md), [Business Process](business-process.md), [Application](application.md), [Requirement](requirement.md), [Capability](capability.md) (parentCapability).
+- **Referred by:** [Application](application.md), [Business Process](business-process.md), [Capability](capability.md) (parentCapability), [Capability Map](capability-map.md), [Epic](epic.md), [Requirement](requirement.md), [Roadmap](roadmap.md), [Value Stream](value-stream.md).
 
 ## 6. Lifecycle / status
 

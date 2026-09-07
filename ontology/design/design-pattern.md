@@ -23,7 +23,7 @@
 | consequences | string | yes | trade-offs |
 | appliedIn | ref[] → [Component](component.md) | yes | where it is applied |
 | mandatedBy | ref[] → [Crosscutting Concern](crosscutting-concern.md) | no | when a concern mandates this pattern |
-| relatedPatterns | string | no | |
+| relatedPatterns | ref[] → [Design Pattern](design-pattern.md) | no | related/complementary patterns (e.g. Strategy ↔ State) |
 | justifiedBy | ref → [Decision](../analysis/decision.md) | no | ADR selecting this pattern |
 
 ## 4. State (as-is / target)
@@ -32,8 +32,8 @@ Stateful. As-is patterns (existing tactical choices, 🟤🔵) vs target pattern
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Component](component.md), [Crosscutting Concern](crosscutting-concern.md), [Decision](../analysis/decision.md) (justified by).
-- **Referred by:** [Component](component.md), [Crosscutting Concern](crosscutting-concern.md), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md).
+- **Refers to:** [Component](component.md), [Crosscutting Concern](crosscutting-concern.md), [Decision](../analysis/decision.md) (justified by), [Design Pattern](design-pattern.md) (relatedPatterns).
+- **Referred by:** [Component](component.md), [Crosscutting Concern](crosscutting-concern.md), [Design Pattern](design-pattern.md) (relatedPatterns), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md).
 
 ## 6. Lifecycle / status
 

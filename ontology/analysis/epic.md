@@ -24,6 +24,7 @@
 | parityEpic | bool | no | 🟤🔵 — replaces a legacy feature |
 | realizes | ref → [Capability](capability.md) | yes | |
 | srsTrace | ref[] → [Requirement](requirement.md) | yes | |
+| epicDependencies | ref[] → [Epic](epic.md) | no | dependencies on other epics |
 
 ## 4. State (as-is / target)
 
@@ -31,8 +32,8 @@ Journey — delivered incrementally across sprints.
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Capability](capability.md), [User Story](user-story.md), [Requirement](requirement.md).
-- **Referred by:** [Release](release.md), [User Story](user-story.md).
+- **Refers to:** [Capability](capability.md), [User Story](user-story.md), [Requirement](requirement.md), [Epic](epic.md) (epicDependencies).
+- **Referred by:** [Epic](epic.md) (epicDependencies), [Release](release.md), [User Story](user-story.md).
 
 ## 6. Lifecycle / status
 

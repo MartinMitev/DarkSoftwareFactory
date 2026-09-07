@@ -155,6 +155,7 @@ flowchart TD
   end
 
   component --> application
+  component --> component
   component --> interface
   component --> data_entity
   component --> design_pattern
@@ -171,8 +172,10 @@ flowchart TD
   design_pattern --> component
   design_pattern --> crosscutting_concern
   design_pattern --> decision
+  design_pattern --> design_pattern
   infrastructure_resource --> technology
   infrastructure_resource --> environment
+  infrastructure_resource --> infrastructure_resource
   infrastructure_resource --> legacy_decommission
   infrastructure_resource --> decision
   deployment_node --> component

@@ -17,6 +17,7 @@
 |---|---|---|---|
 | id | string | yes | e.g. WP1, WP1.1 |
 | description | string | yes | |
+| parentWorkPackage | ref → [Work Package](work-package.md) | no | parent WBS node (containment hierarchy) |
 | scopeItemsCovered | ref[] → [Scope Item](scope-item.md) | yes | |
 | deliverables | ref[] → [Deliverable](deliverable.md) | yes | |
 | acceptanceCriteria | string | yes | |
@@ -29,8 +30,8 @@ Stateful. As-is work packages (current work) vs target work packages.
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Scope Item](scope-item.md), [Deliverable](deliverable.md), [Dependency](dependency.md), [Estimate](estimate.md).
-- **Referred by:** [Change Request](change-request.md), [Dependency](dependency.md), [Estimate](estimate.md), [Scope Item](scope-item.md).
+- **Refers to:** [Scope Item](scope-item.md), [Deliverable](deliverable.md), [Dependency](dependency.md), [Estimate](estimate.md), [Work Package](work-package.md) (parentWorkPackage).
+- **Referred by:** [Change Request](change-request.md), [Dependency](dependency.md), [Estimate](estimate.md), [Scope Item](scope-item.md), [Work Package](work-package.md) (parentWorkPackage).
 
 ## 6. Lifecycle / status
 

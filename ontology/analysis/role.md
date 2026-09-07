@@ -9,7 +9,7 @@
 
 ## 2. Semantics (crisp)
 
-`role` is an **access/permission bundle with accountability** — a defined set of permissions and access levels, optionally with a hierarchy (inheritance) and a persona mapping. It is **not** a user persona (a user with goals — → [Persona](persona.md)) and **not** a use-case actor binding (→ [Use Case](use-case.md) participants). A role may be mapped to a persona; many people can hold one role. For Brown Field / Modernization, a role carries a `changeType` (new / preserved / modified).
+`role` is an **access/permission bundle with accountability** — a defined set of permissions and access levels, optionally with a `parentRole` (hierarchy / inheritance) and a persona mapping. It is **not** a user persona (a user with goals — → [Persona](persona.md)) and **not** a use-case actor binding (→ [Use Case](use-case.md) participants). A role may be mapped to a persona; many people can hold one role. For Brown Field / Modernization, a role carries a `changeType` (new / preserved / modified).
 
 ## 3. Attributes
 
@@ -17,7 +17,7 @@
 |---|---|---|---|
 | name | string | yes | |
 | permissions | string | yes | access levels |
-| hierarchy | string | no | inheritance, if any |
+| parentRole | ref → [Role](role.md) | no | parent role in the hierarchy (inheritance) |
 | personaMapping | ref → [Persona](persona.md) | no | which persona this role serves |
 | changeType | enum (new / preserved / modified) | no | 🟤🔵 |
 
@@ -27,8 +27,8 @@ Stateful. As-is roles (current permission model) vs target roles. Change type ma
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Persona](persona.md), [Business Process](business-process.md).
-- **Referred by:** [Application](application.md), [Business Process](business-process.md), [Cutover](cutover.md), [Governance](governance.md), [Persona](persona.md), [RACI Assignment](raci-assignment.md), [Stakeholder](stakeholder.md), [Use Case](use-case.md), [User Story](user-story.md).
+- **Refers to:** [Persona](persona.md), [Business Process](business-process.md), [Role](role.md) (parentRole).
+- **Referred by:** [Application](application.md), [Business Process](business-process.md), [Cutover](cutover.md), [Governance](governance.md), [Persona](persona.md), [RACI Assignment](raci-assignment.md), [Role](role.md) (parentRole), [Stakeholder](stakeholder.md), [Use Case](use-case.md), [User Story](user-story.md).
 
 ## 6. Lifecycle / status
 

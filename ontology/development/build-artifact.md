@@ -21,6 +21,7 @@
 | digest | string | yes | sha256 / content hash — immutability proof |
 | producedBy | ref → [Build Run](build-run.md) | yes | provenance |
 | packagesCodeUnits | ref[] → [Code Unit](code-unit.md) | yes | the sources it bundles |
+| dependsOnArtifacts | ref[] → [Build Artifact](build-artifact.md) | no | other artifacts this one depends on (e.g. WAR → JAR, image → base image) |
 | realisesRelease | ref → [Release](../analysis/release.md) | no | the release that deploys it |
 | deploysTo | ref → [Deployment Node](../design/deployment-node.md) | no | the static mapping target |
 
@@ -30,8 +31,8 @@ Stateless — an immutable output. Versions supersede, not mutate. Retired artif
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Build Run](build-run.md) (produced by), [Code Unit](code-unit.md) (packages), [Release](../analysis/release.md) (realises), [Deployment Node](../design/deployment-node.md) (deploys to).
-- **Referred by:** [Build Run](build-run.md), [Deployment Node](../design/deployment-node.md).
+- **Refers to:** [Build Run](build-run.md) (produced by), [Code Unit](code-unit.md) (packages), [Release](../analysis/release.md) (realises), [Deployment Node](../design/deployment-node.md) (deploys to), [Build Artifact](build-artifact.md) (dependsOnArtifacts).
+- **Referred by:** [Build Run](build-run.md), [Build Artifact](build-artifact.md) (dependsOnArtifacts), [Deployment Node](../design/deployment-node.md).
 
 ## 6. Lifecycle / status
 

@@ -23,6 +23,7 @@
 | verificationMethod | enum (demo / test / inspection / analysis) | yes | |
 | status | enum (Draft / Approved / Implemented / Verified) | yes | |
 | tracesTo | ref[] | yes | → [Capability](capability.md) / [Business Process](business-process.md) / [Scope Item](scope-item.md) / [Objective](objective.md) / [Compliance Requirement](compliance-requirement.md) |
+| derivedFrom | ref[] → [Requirement](requirement.md) | no | parent requirements this one is derived/decomposed from |
 
 ## 4. State (as-is / target)
 
@@ -30,8 +31,8 @@ Stateful. As-is requirements (existing behaviour) vs target requirements. Brown 
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Capability](capability.md), [Business Process](business-process.md), [Scope Item](scope-item.md), [Objective](objective.md), [Compliance Requirement](compliance-requirement.md), [Use Case](use-case.md), [Business Rule](business-rule.md), [Data Entity](data-entity.md), [Interface](interface.md), [User Story](user-story.md).
-- **Referred by:** [Acceptance Criterion](acceptance-criterion.md), [Business Rule](business-rule.md), [Capability](capability.md), [Change Request](change-request.md), [Compliance Requirement](compliance-requirement.md), [Data Entity](data-entity.md), [Epic](epic.md), [Interface](interface.md), [Objective](objective.md), [Proof of Concept](proof-of-concept.md), [Quality Gate](quality-gate.md), [Scope Item](scope-item.md), [Use Case](use-case.md), [User Story](user-story.md), [Verification & Validation](verification-validation.md).
+- **Refers to:** [Capability](capability.md), [Business Process](business-process.md), [Scope Item](scope-item.md), [Objective](objective.md), [Compliance Requirement](compliance-requirement.md), [Use Case](use-case.md), [Business Rule](business-rule.md), [Data Entity](data-entity.md), [Interface](interface.md), [User Story](user-story.md), [Requirement](requirement.md) (derivedFrom).
+- **Referred by:** [Acceptance Criterion](acceptance-criterion.md), [Business Rule](business-rule.md), [Capability](capability.md), [Change Request](change-request.md), [Compliance Requirement](compliance-requirement.md), [Data Entity](data-entity.md), [Epic](epic.md), [Interface](interface.md), [Objective](objective.md), [Proof of Concept](proof-of-concept.md), [Quality Gate](quality-gate.md), [Requirement](requirement.md) (derivedFrom), [Scope Item](scope-item.md), [Use Case](use-case.md), [User Story](user-story.md), [Verification & Validation](verification-validation.md).
 
 ## 6. Lifecycle / status
 

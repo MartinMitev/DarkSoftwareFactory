@@ -193,6 +193,7 @@ flowchart TD
   business_rule --> requirement
   capability --> application
   capability --> business_process
+  capability --> capability
   capability --> capability_map
   capability --> requirement
   capability_map --> business_model
@@ -232,6 +233,7 @@ flowchart TD
   data_migration --> legacy_decommission
   decision --> change_request
   decision --> cutover
+  decision --> decision
   decision --> milestone
   decision --> option
   decision --> stage_gate
@@ -243,6 +245,7 @@ flowchart TD
   dependency --> work_package
   documentation_inventory --> project
   epic --> capability
+  epic --> epic
   epic --> requirement
   epic --> user_story
   estimate --> cost
@@ -278,11 +281,13 @@ flowchart TD
   market_and_demand --> business_model
   milestone --> decision
   milestone --> deliverable
+  milestone --> milestone
   milestone --> phase
   milestone --> stage_gate
   milestone --> stakeholder
   objective --> business_model
   objective --> kpi
+  objective --> objective
   objective --> requirement
   objective --> scope_item
   objective --> success_criterion
@@ -297,6 +302,7 @@ flowchart TD
   persona --> user_story
   phase --> deliverable
   phase --> milestone
+  phase --> phase
   phase --> scope_item
   post_implementation_review --> benefit
   post_implementation_review --> kpi
@@ -332,6 +338,7 @@ flowchart TD
   requirement --> data_entity
   requirement --> interface
   requirement --> objective
+  requirement --> requirement
   requirement --> scope_item
   requirement --> use_case
   requirement --> user_story
@@ -345,6 +352,7 @@ flowchart TD
   roadmap --> transition_strategy
   role --> business_process
   role --> persona
+  role --> role
   scope_item --> deliverable
   scope_item --> objective
   scope_item --> phase
@@ -376,6 +384,7 @@ flowchart TD
   use_case --> persona
   use_case --> requirement
   use_case --> role
+  use_case --> use_case
   user_story --> acceptance_criterion
   user_story --> epic
   user_story --> persona
@@ -397,6 +406,7 @@ flowchart TD
   work_package --> dependency
   work_package --> estimate
   work_package --> scope_item
+  work_package --> work_package
 ```
 
 > The diagram is dense (64 nodes, 228 edges) because the ontology is genuinely interlinked. To trace a single artefact's neighbourhood, open its file and read its "Refers to" / "Referred by" lines, or filter the graph by layer.

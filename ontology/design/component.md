@@ -19,6 +19,8 @@
 | name | string | yes | |
 | kind | enum (module / microservice / package / subsystem / layer / class / library / framework) | yes | |
 | level | int (1 / 2 / 3) | yes | whitebox hierarchy |
+| parentComponent | ref → [Component](component.md) | no | parent whitebox block (containment hierarchy) |
+| contains | ref[] → [Component](component.md) | no | contained whitebox sub-blocks (hierarchical decomposition) |
 | responsibility | string | yes | single responsibility |
 | exposes | ref[] → [Interface](../analysis/interface.md) | yes | internal + external boundaries |
 | consumes | ref[] → [Interface](../analysis/interface.md) | yes | |
@@ -41,8 +43,8 @@ Stateful. As-is components (existing building blocks, 🟤🔵 — counterpart o
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Application](../analysis/application.md) (part of), [Interface](../analysis/interface.md), [Data Entity](../analysis/data-entity.md), [Design Pattern](design-pattern.md), [Crosscutting Concern](crosscutting-concern.md), [Requirement](../analysis/requirement.md), [Technology](../analysis/technology.md), [Current System](../analysis/current-system.md) (as-is counterpart, 🟤🔵), [Decision](../analysis/decision.md) (justified by).
-- **Referred by:** [Execution Flow](execution-flow.md), [Design Pattern](design-pattern.md), [Deployment Node](deployment-node.md), [Crosscutting Concern](crosscutting-concern.md), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md).
+- **Refers to:** [Application](../analysis/application.md) (part of), [Interface](../analysis/interface.md), [Data Entity](../analysis/data-entity.md), [Design Pattern](design-pattern.md), [Crosscutting Concern](crosscutting-concern.md), [Requirement](../analysis/requirement.md), [Technology](../analysis/technology.md), [Current System](../analysis/current-system.md) (as-is counterpart, 🟤🔵), [Decision](../analysis/decision.md) (justified by), [Component](component.md) (parentComponent / contains — whitebox hierarchy).
+- **Referred by:** [Component](component.md) (parentComponent / contains), [Execution Flow](execution-flow.md), [Design Pattern](design-pattern.md), [Deployment Node](deployment-node.md), [Crosscutting Concern](crosscutting-concern.md), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md).
 
 ## 6. Lifecycle / status
 

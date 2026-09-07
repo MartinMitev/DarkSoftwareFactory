@@ -18,6 +18,7 @@
 | id | string | yes | e.g. M1 |
 | name | string | yes | |
 | targetDate | date | yes | |
+| predecessorMilestones | ref[] → [Milestone](milestone.md) | no | milestones that must be reached first (critical path) |
 | phase | ref → [Phase](phase.md) | yes | |
 | gateDecision | ref → [Stage Gate](stage-gate.md) | yes | |
 | successCriteria | string | yes | |
@@ -29,8 +30,8 @@ Journey — a checkpoint on the as-is→target path.
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Phase](phase.md), [Decision](decision.md), [Stage Gate](stage-gate.md), [Deliverable](deliverable.md), [Stakeholder](stakeholder.md).
-- **Referred by:** [Benefit](benefit.md), [Cutover](cutover.md), [Decision](decision.md), [Legacy Decommission](legacy-decommission.md), [Phase](phase.md), [Post-Implementation Review](post-implementation-review.md), [Release](release.md), [Roadmap](roadmap.md), [Stage Gate](stage-gate.md).
+- **Refers to:** [Phase](phase.md), [Decision](decision.md), [Stage Gate](stage-gate.md), [Deliverable](deliverable.md), [Stakeholder](stakeholder.md), [Milestone](milestone.md) (predecessorMilestones).
+- **Referred by:** [Benefit](benefit.md), [Cutover](cutover.md), [Decision](decision.md), [Legacy Decommission](legacy-decommission.md), [Milestone](milestone.md) (predecessorMilestones), [Phase](phase.md), [Post-Implementation Review](post-implementation-review.md), [Release](release.md), [Roadmap](roadmap.md), [Stage Gate](stage-gate.md).
 
 ## 6. Lifecycle / status
 

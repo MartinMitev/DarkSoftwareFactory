@@ -29,6 +29,7 @@
 | adrConsequences | table (easier / moreDifficult) | no | for architecture decisions |
 | compliance | string | no | how compliance with the decision is ensured; for architecture decisions |
 | sectionReference | string | no | back-reference into the hosting document section |
+| supersedes | ref → [Decision](decision.md) | no | the prior decision this one replaces (ADR supersession chain) |
 
 ## 4. State (as-is / target)
 
@@ -36,8 +37,8 @@ Stateless — a recorded decision.
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Option](option.md), [Stage Gate](stage-gate.md), [Change Request](change-request.md), [Milestone](milestone.md), [Cutover](cutover.md).
-- **Referred by:** [Change Request](change-request.md), [Cutover](cutover.md), [Gap & Contradiction](gap-and-contradiction.md), [Governance](governance.md), [Milestone](milestone.md), [Stage Gate](stage-gate.md).
+- **Refers to:** [Option](option.md), [Stage Gate](stage-gate.md), [Change Request](change-request.md), [Milestone](milestone.md), [Cutover](cutover.md), [Decision](decision.md) (supersedes).
+- **Referred by:** [Change Request](change-request.md), [Cutover](cutover.md), [Decision](decision.md) (supersedes), [Gap & Contradiction](gap-and-contradiction.md), [Governance](governance.md), [Milestone](milestone.md), [Stage Gate](stage-gate.md).
 
 ## 6. Lifecycle / status
 

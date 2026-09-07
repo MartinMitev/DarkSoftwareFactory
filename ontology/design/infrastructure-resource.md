@@ -21,6 +21,7 @@
 | instanceOf | ref → [Technology](../analysis/technology.md) | yes | the technology this is an instance of |
 | residesIn | ref → [Environment](environment.md) | yes | |
 | qualityPerformance | string | yes | capacity / throughput / redundancy |
+| contains | ref[] → [Infrastructure Resource](infrastructure-resource.md) | no | contained sub-resources (level-2 containment hierarchy) |
 | subElements | table (subElement / purpose / qualityPerformance) | no | level-2 internal structure |
 | changeType | enum (new / modified / preserved / retired) | no | 🟤🔵 |
 | retirementTimeline | string | no | 🟤🔵 linked to [Legacy Decommission](../analysis/legacy-decommission.md) |
@@ -32,8 +33,8 @@ Stateful. As-is infrastructure (legacy, 🟤🔵) vs target infrastructure; tran
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Technology](../analysis/technology.md) (instance of), [Environment](environment.md) (resides in), [Legacy Decommission](../analysis/legacy-decommission.md) (🟤🔵), [Decision](../analysis/decision.md) (justified by).
-- **Referred by:** [Deployment Node](deployment-node.md), [Environment](environment.md), [Decision](../analysis/decision.md).
+- **Refers to:** [Technology](../analysis/technology.md) (instance of), [Environment](environment.md) (resides in), [Legacy Decommission](../analysis/legacy-decommission.md) (🟤🔵), [Decision](../analysis/decision.md) (justified by), [Infrastructure Resource](infrastructure-resource.md) (contains).
+- **Referred by:** [Deployment Node](deployment-node.md), [Environment](environment.md), [Infrastructure Resource](infrastructure-resource.md) (contains), [Decision](../analysis/decision.md).
 
 ## 6. Lifecycle / status
 

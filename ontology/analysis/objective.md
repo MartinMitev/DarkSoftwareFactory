@@ -9,7 +9,7 @@
 
 ## 2. Semantics (crisp)
 
-`objective` is a **goal** stated in SMART form (Specific, Measurable, Achievable, Relevant, Time-bound), distinguished as primary or secondary, with a timeframe and a link to the strategic objective it supports. It is **not** the measure of success (→ [Success Criterion](success-criterion.md)), **not** the ongoing indicator (→ [KPI](kpi.md)), and **not** a requirement (→ [Requirement](requirement.md)). Objectives trace to the [Business Model](business-model.md) and are realised by scope items and requirements.
+`objective` is a **goal** stated in SMART form (Specific, Measurable, Achievable, Relevant, Time-bound), distinguished as primary or secondary, with a timeframe and a `parentObjective` link (the strategic/parent objective it supports, forming an objective decomposition hierarchy). It is **not** the measure of success (→ [Success Criterion](success-criterion.md)), **not** the ongoing indicator (→ [KPI](kpi.md)), and **not** a requirement (→ [Requirement](requirement.md)). Objectives trace to the [Business Model](business-model.md) and are realised by scope items and requirements.
 
 ## 3. Attributes
 
@@ -20,7 +20,7 @@
 | smartMeasure | string | yes | the measurable part |
 | timeframe | string | yes | short / medium / long |
 | priority | enum (primary / secondary) | yes | |
-| linkedStrategy | string | yes | strategic objective |
+| parentObjective | ref → [Objective](objective.md) | no | the strategic/parent objective this supports (objective decomposition hierarchy) |
 
 ## 4. State (as-is / target)
 
@@ -28,8 +28,8 @@ Stateless — a goal.
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Business Model](business-model.md), [Scope Item](scope-item.md), [Requirement](requirement.md), [Success Criterion](success-criterion.md), [KPI](kpi.md).
-- **Referred by:** [Benefit](benefit.md), [Business Model](business-model.md), [KPI](kpi.md), [Option](option.md), [Post-Implementation Review](post-implementation-review.md), [Requirement](requirement.md), [Scope Item](scope-item.md), [Success Criterion](success-criterion.md).
+- **Refers to:** [Business Model](business-model.md), [Scope Item](scope-item.md), [Requirement](requirement.md), [Success Criterion](success-criterion.md), [KPI](kpi.md), [Objective](objective.md) (parentObjective).
+- **Referred by:** [Benefit](benefit.md), [Business Model](business-model.md), [KPI](kpi.md), [Objective](objective.md) (parentObjective), [Option](option.md), [Post-Implementation Review](post-implementation-review.md), [Requirement](requirement.md), [Scope Item](scope-item.md), [Success Criterion](success-criterion.md).
 
 ## 6. Lifecycle / status
 

@@ -28,6 +28,8 @@
 | frequency | string | yes | |
 | MoSCoW | enum (Must / Should / Could) | yes | |
 | tracesTo | ref[] → [Requirement](requirement.md) | yes | |
+| includes | ref[] → [Use Case](use-case.md) | no | UML <<include>> — mandatory sub-use-cases |
+| extends | ref[] → [Use Case](use-case.md) | no | UML <<extend>> — optional/conditional extensions |
 
 ## 4. State (as-is / target)
 
@@ -35,8 +37,8 @@ Stateful. As-is use cases (existing interactions) vs target use cases. Brown Fie
 
 ## 5. Relationships (semantic references)
 
-- **Refers to:** [Persona](persona.md), [Role](role.md), [Interface](interface.md), [Requirement](requirement.md), [Business Rule](business-rule.md).
-- **Referred by:** [Persona](persona.md), [Requirement](requirement.md), [Verification & Validation](verification-validation.md).
+- **Refers to:** [Persona](persona.md), [Role](role.md), [Interface](interface.md), [Requirement](requirement.md), [Business Rule](business-rule.md), [Use Case](use-case.md) (includes / extends).
+- **Referred by:** [Persona](persona.md), [Requirement](requirement.md), [Use Case](use-case.md) (includes / extends), [Verification & Validation](verification-validation.md).
 
 ## 6. Lifecycle / status
 
