@@ -34,7 +34,7 @@ Stateless — a single execution record; immutable once finished.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Test Suite](test-suite.md), [Test Configuration](test-configuration.md), [Test Data Set](test-data-set.md), [Environment](../design/environment.md), [Build Artifact](../development/build-artifact.md), [Pull Request](../development/pull-request.md), [Code Commit](../development/code-commit.md), [Release](../analysis/release.md), [Build Run](../development/build-run.md), [Test Result](test-result.md).
-- **Referred by:** [Test Result](test-result.md), analysis [Issue](../analysis/issue.md) (defect facet `foundByTestRun`), rollout [Deployment Execution](../rollout/deployment-execution.md) (verificationTestRun).
+- **Referred by:** [Test Result](test-result.md), analysis [Issue](../analysis/issue.md) (defect facet `foundByTestRun`), rollout [Deployment Execution](../rollout/deployment-execution.md) (verificationTestRun), maintenance [Ticket](../maintenance/ticket.md) (verifiedByTestRun).
 
 ## 6. Lifecycle / status
 

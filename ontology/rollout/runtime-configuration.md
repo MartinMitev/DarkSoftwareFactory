@@ -34,7 +34,7 @@ Stateless — an immutable baseline once frozen. New baselines are new versions.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Environment](../design/environment.md), [Build Artifact](../development/build-artifact.md).
-- **Referred by:** [Deployment Runbook](deployment-runbook.md), [Deployment Execution](deployment-execution.md).
+- **Referred by:** [Deployment Runbook](deployment-runbook.md), [Deployment Execution](deployment-execution.md), maintenance [Monitoring Alert](../maintenance/monitoring-alert.md), maintenance [Maintenance Log](../maintenance/maintenance-log.md).
 
 ## 6. Lifecycle / status
 

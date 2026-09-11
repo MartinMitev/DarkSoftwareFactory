@@ -44,7 +44,7 @@ Stateful. As-is components (existing building blocks, 🟤🔵 — counterpart o
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Application](../analysis/application.md) (part of), [Interface](../analysis/interface.md), [Data Entity](../analysis/data-entity.md), [Design Pattern](design-pattern.md), [Crosscutting Concern](crosscutting-concern.md), [Requirement](../analysis/requirement.md), [Technology](../analysis/technology.md), [Current System](../analysis/current-system.md) (as-is counterpart, 🟤🔵), [Decision](../analysis/decision.md) (justified by), [Component](component.md) (parentComponent / contains — whitebox hierarchy).
-- **Referred by:** [Component](component.md) (parentComponent / contains), [Execution Flow](execution-flow.md), [Design Pattern](design-pattern.md), [Deployment Node](deployment-node.md), [Crosscutting Concern](crosscutting-concern.md), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md).
+- **Referred by:** [Component](component.md) (parentComponent / contains), [Execution Flow](execution-flow.md), [Design Pattern](design-pattern.md), [Deployment Node](deployment-node.md), [Crosscutting Concern](crosscutting-concern.md), [Quality Scenario](quality-scenario.md), [Decision](../analysis/decision.md), maintenance [Ticket](../maintenance/ticket.md), maintenance [Maintenance Log](../maintenance/maintenance-log.md).
 
 ## 6. Lifecycle / status
 

@@ -35,7 +35,7 @@ Stateless — a potential harm.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Stakeholder](stakeholder.md) (owner).
-- **Referred by:** [Current System](current-system.md), [Gap & Contradiction](gap-and-contradiction.md), [Option](option.md), [SWOT Item](swot-item.md), [Vendor](vendor.md).
+- **Referred by:** [Current System](current-system.md), [Gap & Contradiction](gap-and-contradiction.md), [Option](option.md), [SWOT Item](swot-item.md), [Vendor](vendor.md), maintenance [Vulnerability Finding](../maintenance/vulnerability-finding.md) (linkedRisk), maintenance [Ticket](../maintenance/ticket.md) (linkedRisk).
 
 ## 6. Lifecycle / status
 

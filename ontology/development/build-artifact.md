@@ -32,7 +32,7 @@ Stateless — an immutable output. Versions supersede, not mutate. Retired artif
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Build Run](build-run.md) (produced by), [Code Unit](code-unit.md) (packages), [Release](../analysis/release.md) (realises), [Deployment Node](../design/deployment-node.md) (deploys to), [Build Artifact](build-artifact.md) (dependsOnArtifacts).
-- **Referred by:** [Build Run](build-run.md), [Build Artifact](build-artifact.md) (dependsOnArtifacts), [Deployment Node](../design/deployment-node.md), rollout [Runtime Configuration](../rollout/runtime-configuration.md) (configuresArtifact), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (deployment steps), rollout [Deployment Execution](../rollout/deployment-execution.md) (deployedArtifacts), analysis [Release](../analysis/release.md) (buildArtifacts).
+- **Referred by:** [Build Run](build-run.md), [Build Artifact](build-artifact.md) (dependsOnArtifacts), [Deployment Node](../design/deployment-node.md), rollout [Runtime Configuration](../rollout/runtime-configuration.md) (configuresArtifact), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (deployment steps), rollout [Deployment Execution](../rollout/deployment-execution.md) (deployedArtifacts), analysis [Release](../analysis/release.md) (buildArtifacts), maintenance [Vulnerability Finding](../maintenance/vulnerability-finding.md) (affectedArtifacts).
 
 ## 6. Lifecycle / status
 

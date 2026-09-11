@@ -32,7 +32,7 @@ Stateless — a tool report; lifecycle open → triaged → fixed / false-positi
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Code Unit](code-unit.md) (location), [Issue](../analysis/issue.md), [Technical Debt Item](../analysis/technical-debt-item.md) (triages to), [Refactoring](refactoring.md) (resolved by).
-- **Referred by:** [Code Review](code-review.md) (cited), [Refactoring](refactoring.md) (resolves), [Pull Request](pull-request.md) (surfaced via a [Build Run](build-run.md)).
+- **Referred by:** [Code Review](code-review.md) (cited), [Refactoring](refactoring.md) (resolves), [Pull Request](pull-request.md) (surfaced via a [Build Run](build-run.md)), maintenance [Ticket](../maintenance/ticket.md) (linkedFinding).
 
 ## 6. Lifecycle / status
 

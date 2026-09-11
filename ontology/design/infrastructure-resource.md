@@ -34,7 +34,7 @@ Stateful. As-is infrastructure (legacy, 🟤🔵) vs target infrastructure; tran
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Technology](../analysis/technology.md) (instance of), [Environment](environment.md) (resides in), [Legacy Decommission](../analysis/legacy-decommission.md) (🟤🔵), [Decision](../analysis/decision.md) (justified by), [Infrastructure Resource](infrastructure-resource.md) (contains).
-- **Referred by:** [Deployment Node](deployment-node.md), [Environment](environment.md), [Infrastructure Resource](infrastructure-resource.md) (contains), [Decision](../analysis/decision.md).
+- **Referred by:** [Deployment Node](deployment-node.md), [Environment](environment.md), [Infrastructure Resource](infrastructure-resource.md) (contains), [Decision](../analysis/decision.md), maintenance [Monitoring Alert](../maintenance/monitoring-alert.md), maintenance [Vulnerability Finding](../maintenance/vulnerability-finding.md).
 
 ## 6. Lifecycle / status
 

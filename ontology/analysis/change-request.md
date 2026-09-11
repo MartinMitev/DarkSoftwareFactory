@@ -30,7 +30,7 @@ Stateless — a request.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Scope Item](scope-item.md), [Requirement](requirement.md), [Work Package](work-package.md), [Decision](decision.md), [Governance](governance.md).
-- **Referred by:** [Decision](decision.md), [Governance](governance.md).
+- **Referred by:** [Decision](decision.md), [Governance](governance.md), maintenance [Ticket](../maintenance/ticket.md) (linkedChangeRequest).
 
 ## 6. Lifecycle / status
 

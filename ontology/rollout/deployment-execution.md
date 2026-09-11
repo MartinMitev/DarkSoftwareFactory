@@ -38,7 +38,7 @@ Stateless — a single execution record; immutable once finished.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Deployment Runbook](deployment-runbook.md) (executes), [Build Artifact](../development/build-artifact.md) (deployed), [Runtime Configuration](runtime-configuration.md) (applied), [Seed Data Setup](seed-data-setup.md) (loaded), [Environment](../design/environment.md) (target), [Build Run](../development/build-run.md) (triggered by), [Test Run](../testing/test-run.md) (verification), [Decision](../analysis/decision.md) (approved by).
-- **Referred by:** none.
+- **Referred by:** maintenance [Ticket](../maintenance/ticket.md) (deployedBy), maintenance [Maintenance Log](../maintenance/maintenance-log.md) (partOfDeployment).
 
 ## 6. Lifecycle / status
 

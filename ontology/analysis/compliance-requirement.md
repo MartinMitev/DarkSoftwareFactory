@@ -30,7 +30,7 @@ Stateless — an external obligation.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Requirement](requirement.md), [Data Entity](data-entity.md), [Constraint](constraint.md).
-- **Referred by:** [Business Rule](business-rule.md), [Constraint](constraint.md), [Data Entity](data-entity.md), [Requirement](requirement.md).
+- **Referred by:** [Business Rule](business-rule.md), [Constraint](constraint.md), [Data Entity](data-entity.md), [Requirement](requirement.md), maintenance [Vulnerability Finding](../maintenance/vulnerability-finding.md) (linkedComplianceRequirement).
 
 ## 6. Lifecycle / status
 

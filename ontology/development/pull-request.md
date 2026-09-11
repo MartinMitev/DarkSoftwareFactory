@@ -31,7 +31,7 @@ Stateless — a VCS/forge construct; lifecycle open → approved → merged / re
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Branch](branch.md), [Code Commit](code-commit.md), [Code Review](code-review.md), [Quality Gate](../analysis/quality-gate.md), [User Story](../analysis/user-story.md), [Scope Item](../analysis/scope-item.md).
-- **Referred by:** [Code Review](code-review.md), [Build Run](build-run.md).
+- **Referred by:** [Code Review](code-review.md), [Build Run](build-run.md), maintenance [Ticket](../maintenance/ticket.md) (resolvedByPullRequest).
 
 ## 6. Lifecycle / status
 
