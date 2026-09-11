@@ -30,7 +30,7 @@ Stateful. As-is pipeline (existing CI/CD, 🟤🔵) vs target pipeline. Change t
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Quality Gate](../analysis/quality-gate.md) (enforces), [Environment](../design/environment.md) (per-environment variants), [Decision](../analysis/decision.md) (justified by).
-- **Referred by:** [Build Run](build-run.md).
+- **Referred by:** [Build Run](build-run.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (automatedByPipeline).
 
 ## 6. Lifecycle / status
 

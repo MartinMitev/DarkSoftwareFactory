@@ -27,7 +27,7 @@ Journey — a checkpoint on the delivery path.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [User Story](user-story.md), [Requirement](requirement.md), [Release](release.md), [Cutover](cutover.md), [Acceptance Criterion](acceptance-criterion.md).
-- **Referred by:** [Release](release.md), [Verification & Validation](verification-validation.md).
+- **Referred by:** [Release](release.md), [Verification & Validation](verification-validation.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (enforcesGates).
 
 ## 6. Lifecycle / status
 

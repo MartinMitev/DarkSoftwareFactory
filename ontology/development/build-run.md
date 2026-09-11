@@ -32,7 +32,7 @@ Stateless — a single execution record; immutable once finished.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Pipeline](pipeline.md) (executes), [Pull Request](pull-request.md), [Code Commit](code-commit.md), [Build Artifact](build-artifact.md) (produces), [Environment](../design/environment.md) (runs in).
-- **Referred by:** [Build Artifact](build-artifact.md) (provenance).
+- **Referred by:** [Build Artifact](build-artifact.md) (provenance), rollout [Deployment Execution](../rollout/deployment-execution.md) (triggeredByBuildRun).
 
 ## 6. Lifecycle / status
 

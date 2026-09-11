@@ -38,7 +38,7 @@ Stateless — a recorded decision.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Option](option.md), [Stage Gate](stage-gate.md), [Change Request](change-request.md), [Milestone](milestone.md), [Cutover](cutover.md), [Decision](decision.md) (supersedes).
-- **Referred by:** [Change Request](change-request.md), [Cutover](cutover.md), [Decision](decision.md) (supersedes), [Gap & Contradiction](gap-and-contradiction.md), [Governance](governance.md), [Milestone](milestone.md), [Stage Gate](stage-gate.md).
+- **Referred by:** [Change Request](change-request.md), [Cutover](cutover.md), [Decision](decision.md) (supersedes), [Gap & Contradiction](gap-and-contradiction.md), [Governance](governance.md), [Milestone](milestone.md), [Stage Gate](stage-gate.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (justifiedBy), rollout [Deployment Execution](../rollout/deployment-execution.md) (approvedBy).
 
 ## 6. Lifecycle / status
 

@@ -68,7 +68,7 @@ Stateless — a test procedure; lifecycle is design → reviewed → approved �
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Acceptance Criterion](../analysis/acceptance-criterion.md), [Requirement](../analysis/requirement.md), [Use Case](../analysis/use-case.md), [Business Process](../analysis/business-process.md), [Quality Scenario](../design/quality-scenario.md), [Component](../design/component.md), [Code Unit](../development/code-unit.md), [Interface](../analysis/interface.md), [Persona](../analysis/persona.md), [Pipeline](../development/pipeline.md), [Documentation Inventory](../analysis/documentation-inventory.md), [Environment](../design/environment.md), [Test Data Set](test-data-set.md), [Test Configuration](test-configuration.md).
-- **Referred by:** [Test Suite](test-suite.md), [Test Result](test-result.md).
+- **Referred by:** [Test Suite](test-suite.md), [Test Result](test-result.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (postDeploymentVerification).
 
 ## 6. Lifecycle / status
 

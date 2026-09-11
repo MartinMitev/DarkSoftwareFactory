@@ -26,7 +26,7 @@ Journey — the switchover event.
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Transition Strategy](transition-strategy.md), [Data Migration](data-migration.md), [Milestone](milestone.md), [Decision](decision.md) (go/no-go, rollback), [Role](role.md).
-- **Referred by:** [Data Migration](data-migration.md), [Decision](decision.md), [Legacy Decommission](legacy-decommission.md), [Quality Gate](quality-gate.md), [Roadmap](roadmap.md), [Transition Strategy](transition-strategy.md).
+- **Referred by:** [Data Migration](data-migration.md), [Decision](decision.md), [Legacy Decommission](legacy-decommission.md), [Quality Gate](quality-gate.md), [Roadmap](roadmap.md), [Transition Strategy](transition-strategy.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (cutoverRef).
 
 ## 6. Lifecycle / status
 

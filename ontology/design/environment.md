@@ -33,7 +33,7 @@ Stateful. As-is environments (existing deployment targets, 🟤🔵) vs target e
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Infrastructure Resource](infrastructure-resource.md) (contains), [Release](../analysis/release.md) (promotion path), [Role](../analysis/role.md), [Vendor](../analysis/vendor.md).
-- **Referred by:** [Infrastructure Resource](infrastructure-resource.md), [Deployment Node](deployment-node.md).
+- **Referred by:** [Infrastructure Resource](infrastructure-resource.md), [Deployment Node](deployment-node.md), rollout [Runtime Configuration](../rollout/runtime-configuration.md), rollout [Seed Data Setup](../rollout/seed-data-setup.md), rollout [Deployment Runbook](../rollout/deployment-runbook.md), rollout [Deployment Execution](../rollout/deployment-execution.md).
 
 ## 6. Lifecycle / status
 

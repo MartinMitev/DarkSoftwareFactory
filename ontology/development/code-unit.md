@@ -35,7 +35,7 @@ Stateful. As-is units (existing source, 🟤🔵 — counterpart of the as-is de
 ## 5. Relationships (semantic references)
 
 - **Refers to:** [Component](../design/component.md) (realises), [Design Pattern](../design/design-pattern.md), [Crosscutting Concern](../design/crosscutting-concern.md), [Technology](../analysis/technology.md), [Role](../analysis/role.md), [Constraint](../analysis/constraint.md), [Code Unit](code-unit.md) (dependsOn — code-unit dependency graph).
-- **Referred by:** [Code Unit](code-unit.md) (dependedBy — code-unit dependency graph), [Code Commit](code-commit.md), [Build Configuration](build-configuration.md), [Build Artifact](build-artifact.md), [Code Review](code-review.md), [Static Analysis Finding](static-analysis-finding.md), [Refactoring](refactoring.md).
+- **Referred by:** [Code Unit](code-unit.md) (dependedBy — code-unit dependency graph), [Code Commit](code-commit.md), [Build Configuration](build-configuration.md), [Build Artifact](build-artifact.md), [Code Review](code-review.md), [Static Analysis Finding](static-analysis-finding.md), [Refactoring](refactoring.md), rollout [Seed Data Setup](../rollout/seed-data-setup.md) (loadScript), rollout [Deployment Runbook](../rollout/deployment-runbook.md) (pre-deploy scripts).
 
 ## 6. Lifecycle / status
 
