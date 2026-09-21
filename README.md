@@ -105,6 +105,8 @@ This list reflects the current repository contents under `skills/`.
 
 - `ci-cd-and-automation`
 - `documentation-and-adrs`
+- `generate-runbook-operational-manual`
+- `generate-user-manual`
 - `shipping-and-launch`
 
 ### Meta
@@ -141,6 +143,14 @@ Available templates include:
 - `templates/testing/non-functional-test-cases.md`
 - `templates/testing/documentation-test-cases.md`
 - `templates/testing/availability-live-test-cases.md`
+
+### Rollout
+
+- `templates/rollout/runbook-operational-manual.md`
+
+### Deployment
+
+- `templates/rollout/user-manual.md`
 
 ---
 

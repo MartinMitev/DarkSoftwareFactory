@@ -1,13 +1,13 @@
 ---
 name: browser-testing-with-devtools
-description: Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.
+description: Tests in real browsers via Playwright MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the playwright MCP server to be configured.
 ---
 
-# Browser Testing with DevTools
+# Browser Testing with Playwright MCP
 
 ## Overview
 
-Use Chrome DevTools MCP to give your agent eyes into the browser. This bridges the gap between static code analysis and live browser execution — the agent can see what the user sees, inspect the DOM, read console logs, analyze network requests, and capture performance data. Instead of guessing what's happening at runtime, verify it.
+Use Playwright MCP to give your agent eyes into the browser. This bridges the gap between static code analysis and live browser execution — the agent can see what the user sees, inspect the DOM, read console logs, analyze network requests, and capture performance data. Instead of guessing what's happening at runtime, verify it.
 
 ## When to Use
 
@@ -20,40 +20,6 @@ Use Chrome DevTools MCP to give your agent eyes into the browser. This bridges t
 - Automated UI testing through the agent
 
 **When NOT to use:** Backend-only changes, CLI tools, or code that doesn't run in a browser.
-
-## Setting Up Chrome DevTools MCP
-
-### Installation
-
-Add the following to your project's `.mcp.json` or Claude Code settings:
-
-```json
-{
-  "mcpServers": {
-    "chrome-devtools": {
-      "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
-    }
-  }
-}
-```
-
-`-y` skips the npx install confirmation. `--autoConnect` connects automatically to a running Chrome instance (or launches one) — recommended for most users.
-
-### Available Tools
-
-Chrome DevTools MCP provides these capabilities:
-
-| Tool | What It Does | When to Use |
-|------|-------------|-------------|
-| **Screenshot** | Captures the current page state | Visual verification, before/after comparisons |
-| **DOM Inspection** | Reads the live DOM tree | Verify component rendering, check structure |
-| **Console Logs** | Retrieves console output (log, warn, error) | Diagnose errors, verify logging |
-| **Network Monitor** | Captures network requests and responses | Verify API calls, check payloads |
-| **Performance Trace** | Records performance timing data | Profile load time, identify bottlenecks |
-| **Element Styles** | Reads computed styles for elements | Debug CSS issues, verify styling |
-| **Accessibility Tree** | Reads the accessibility tree | Verify screen reader experience |
-| **JavaScript Execution** | Runs JavaScript in the page context | Read-only state inspection and debugging (see Security Boundaries) |
 
 ## Security Boundaries
 
